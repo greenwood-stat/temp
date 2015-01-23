@@ -3,6 +3,8 @@ intplot<-function (formula = NULL, data = NULL, type = "b", x.cont = FALSE,
           x.leg = NULL, y.leg = NULL, cex.leg = 1, ncol = 1, pch = c(16, 
                                                                      21, 15, 22, 17, 24, c(3:14)), fun = function(x) mean(x, 
                                                                                                                           na.rm = TRUE), ci.fun = function(x) c(fun(x) - se(x), 
+               
+                                                                                                                                                                
                                                                                                                                                                 fun(x) + se(x)), err.width = if (length(levels(as.factor(x.factor))) > 
                                                                                                                                                                                                    10) 0 else 0.1, err.col = col, err.lty = 1, xlim = NULL, 
           ylim = NULL, cex = NULL, lwd = NULL, col = "black", cex.axis = 1, 
